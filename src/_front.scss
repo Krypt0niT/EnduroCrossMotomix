@@ -1,0 +1,29 @@
+#hero {
+
+    height: 300px;
+  
+
+    @media screen and (min-width:768px) {
+        height: 450px;
+    }
+
+    @media screen and (min-width:1200px) {
+        height: 550px;
+    }
+    
+    
+    width: 100%;
+    background: url('./images/hero-1.jpg' ) ; 
+    background-color: $dark2;
+    color: white;
+    text-transform: uppercase;
+    background-position-x: center;
+    
+    text-shadow: 0px 0px 25px black;
+    //background-attachment: fixed;
+
+    h1{
+        font-weight: 450;
+
+    }
+}

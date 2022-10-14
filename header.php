@@ -8,8 +8,8 @@
 <body <?php body_class('test');?>>
 
 <header>
-    <div class="container   py-2 d-flex align-items-center justify-content-between  h-100">
-        <a href="#"><img src="<?php bloginfo('template_directory');?>/images/logo.png" class="logo img-fluid "></a>
+    <div class="container   py-2 d-flex align-items-center justify-content-between  h-100 ">
+        <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory');?>/images/logo.png" class="logo img-fluid "></a>
 
         <?php
         

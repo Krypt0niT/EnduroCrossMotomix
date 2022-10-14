@@ -10852,16 +10852,15 @@ header .top-menu li a {
   color: rgb(213, 75, 0);
   text-decoration: none;
   font-size: 1.1rem;
-  font-weight: bold;
   text-transform: uppercase;
 }
 
 body {
-  background: rgb(19, 19, 19);
+  background: rgb(35, 35, 35);
 }
 
 #hero {
-  height: 550px;
+  height: 300px;
   width: 100%;
   background: url("./images/hero-1.jpg");
   background-color: rgb(35, 35, 35);
@@ -10869,4 +10868,33 @@ body {
   text-transform: uppercase;
   background-position-x: center;
   text-shadow: 0px 0px 25px black;
+}
+@media screen and (min-width: 768px) {
+  #hero {
+    height: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #hero {
+    height: 550px;
+  }
+}
+#hero h1, #hero .h1 {
+  font-weight: 450;
+}
+
+.main-container h1, .main-container .h1 {
+  color: white;
+  padding: 2rem 0;
+}
+
+footer {
+  height: 250px;
+  background-color: rgb(19, 19, 19);
+  width: 100%;
+}
+
+.content {
+  color: rgb(212, 212, 212);
+  padding: 2rem 0;
 }
