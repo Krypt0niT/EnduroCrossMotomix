@@ -3,7 +3,7 @@
 <head>
     <title></title>
     <?php wp_head();?>
-
+    <script src="https://kit.fontawesome.com/6340ace071.js" crossorigin="anonymous"></script>
 </head>
 <body <?php body_class('test');?>>
 
