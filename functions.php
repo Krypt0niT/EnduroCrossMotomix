@@ -47,7 +47,7 @@ register_sidebar(
         'before_title' => '<h4>',
         'after_title' => '</h4>'
     )
-    );
+);
 
 
     function mytheme_add_woocommerce_support() {
@@ -55,3 +55,10 @@ register_sidebar(
     }
     
     add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
+
+    add_filter( 'yith_wcas_submit_as_input', '__return_false' );
+    add_filter( 'yith_wcas_submit_label', 'my_yith_wcas_submit_label' );
+    function my_yith_wcas_submit_label( $label ) { 
+        return '<i class="fa-solid fa-magnifying-glass"></i>' . $label; 
+    }
